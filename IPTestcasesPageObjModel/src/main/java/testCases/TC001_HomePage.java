@@ -19,7 +19,7 @@ public class TC001_HomePage extends IPProjectWrappers {
 		authors = "MPrem";		
 	}
 	
-	@Test(dependsOnMethods={"TC001_intro.intropagelanding"})
+	@Test
 	
    public void intropagelanding(){
 		

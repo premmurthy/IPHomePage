@@ -8,7 +8,7 @@ public class Intropage {
 	RemoteWebDriver driver;
 	//intropage
 	//public Intropage(){
-	
+	//public Intropage()
 	public static By changeCity=By.linkText(" Change City");
   
 	public static By cityPopup=By.id("searchval");
