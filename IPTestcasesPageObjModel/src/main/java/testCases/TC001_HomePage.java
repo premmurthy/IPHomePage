@@ -12,22 +12,22 @@ public class TC001_HomePage extends IPProjectWrappers {
 	@BeforeClass
 	public void setValues(){
 		browserName = "chrome";
-		//dataSheetName = "TC001";
-		testCaseName = "intropage";
+		///dataSheetName = "TC001";
+		testCaseName = "HomePage";
 		testDescription = "Click of Change City";
-		category = "smoke";
+		category = "Sanity";
 		authors = "MPrem";		
 	}
 	
-	@Test
+	@Test(priority=1)
 	
-   public void intropagelanding(){
+   public void HomePagelanding(){
 		
 		new intropage(driver, test)
 		.changecitystrip();
-	}
 	
-	public void HomepageLand(){
+	
+	//public void HomepageLand(){
 		
 		new HomePage(driver, test);
 	}

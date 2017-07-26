@@ -13,13 +13,13 @@ public class TC001_intro extends IPProjectWrappers {
 	public void setValues(){
 		browserName = "chrome";
 		//dataSheetName = "TC001";
-		testCaseName = "HomePage";
-		testDescription = "Landing of Home Page";
-		category = "smoke";
+		testCaseName = "IntroPage";
+		testDescription = "Landing of Intro Page";
+		category = "Sanity";
 		authors = "MPrem";		
 	}
 	
-@Test
+@Test(priority=0)
    public void intropagelanding(){
 		
 		new intropage(driver, test)

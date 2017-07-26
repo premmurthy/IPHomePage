@@ -3,23 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="testCases.TC001_HomePage"/>
+      <class name="testCases.TC003_SearchPage"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="testCases.TC001_HomePage">
+      <class name="testCases.TC003_SearchPage">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="intropagelanding"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
           <include name="setValues"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="intropagelanding"/>
         </methods>
-      </class> <!-- testCases.TC001_HomePage -->
+      </class> <!-- testCases.TC003_SearchPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
-  <test name="Test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="testCases.TC001_HomePage"/>
-      <class name="testCases.TC001_intro"/>
+      <class name="testCases.TC003_SearchPage"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testCases.TC003_SearchPage">
+        <methods>
+          <include name="setValues"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="intropagelanding"/>
+        </methods>
+      </class> <!-- testCases.TC003_SearchPage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -20,6 +20,7 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -106,7 +107,16 @@ public class IPGenericWrappers extends Reporter implements Wrappers {
 				if(browser.equalsIgnoreCase("chrome")){
 					System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 					driver = new ChromeDriver();
-				}else{
+				}
+				
+				/*if(browser.equalsIgnoreCase("phantomjs")){
+					
+					File file = new File("C:/Users/Temp/Downloads/phantomjs-2.1.1-windows/phantomjs-2.1.1-windows/bin/phantomjs.exe");		
+					System.setProperty("phantomjs.binary.path", "./phantomjs.exe");
+					driver = new PhantomJSDriver();
+				}*/
+				
+				else{
 					System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
 					driver = new FirefoxDriver();
 				}
