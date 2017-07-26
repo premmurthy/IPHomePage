@@ -16,7 +16,7 @@ public class intropage extends IPProjectWrappers {
 		
 		if(!verifyTitle("Search Properties in Chennai, Search New Project Launches in Chennai City | IndiaProperty.com")){
 			
-			reportStep("This is not Intro Page", "Fail");
+			reportStep("This is not Intro Page", "Fail case");
 		}
 		
 		
